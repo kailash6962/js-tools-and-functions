@@ -1,0 +1,22 @@
+<table id="pivottable">
+<tr>
+  <th>S.no</th>
+  <th>Name</th>
+  <th>Email</th>
+ </tr>
+ ...
+</table>
+
+<button id="exportbtn" style="display:none" onclick="ExportToExcel('pivottable')">Export</button>
+
+<script>
+function ExportToExcel(mytblId){
+       var htmltable= document.getElementById(mytblId);
+       var html = htmltable.outerHTML;
+       if($(html).html().trim().length>0){
+        window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
+       } else {
+        alert('No data to export')
+       }
+    }
+</script>
