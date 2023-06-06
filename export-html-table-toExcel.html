@@ -1,4 +1,4 @@
-<table id="pivottable">
+<table id="exporttable">
 <tr>
   <th>S.no</th>
   <th>Name</th>
@@ -7,7 +7,7 @@
  ...
 </table>
 
-<button id="exportbtn" style="display:none" onclick="ExportToExcel('pivottable')">Export</button>
+<button id="exportbtn" onclick="ExportToExcel('exporttable')">Export</button>
 
 <script>
 function ExportToExcel(mytblId){
