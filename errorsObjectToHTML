@@ -1,0 +1,15 @@
+
+function errorsObjectToHTML(errors){
+    let error = '';
+    for (const key in errors) {
+        error += `${key}: <strong>${errors[key]}</strong><br> `;
+    }
+    return error;
+}
+
+let errors = {
+"custcode":"custcode is required",
+"paymentid":"paymentid is required"
+}
+
+console.log(errorsObjectToHTML(errors));
