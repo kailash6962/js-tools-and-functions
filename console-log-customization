@@ -1,0 +1,21 @@
+  console.log('\x1b[32m%s\x1b[0m',"Seeding info");
+  console.warn("Seeding warn");
+  console.error("Seeding error");
+  console.log('This is _italic_ and *bold* text.');
+  console.log('\x1b[32m' + 'Green text' + '\x1b[0m');
+  console.log('\x1b[31mError: Something went wrong\x1b[0m');
+  console.log('\x1b[41m\x1b[37mError: Something went wrong\x1b[0m');
+  console.log('\x1b[1mBold Text\x1b[0m');
+  console.log('\x1b[31mError: Something went wrong\x1b[0m');
+  console.log('Back to default style');
+  console.log('\x1b[31m\x1b[4mImportant Error\x1b[0m');
+  console.log('\x1b[5mBlinking Text\x1b[0m');
+  console.log('\x1b[8mHidden Text (reveal with a highlight)\x1b[0m');
+  console.log('\x1b[7mInverted Colors (text and background swapped)\x1b[0m');
+  console.log('\x1b[38;2;255;0;0mCustom Red Text\x1b[0m');
+  console.log('\x1b[48;2;0;128;0mCustom Green Background\x1b[0m');
+  console.log('This will be cleared\x1b[KThis will overwrite the previous text');
+  console.log('Move cursor to row 5, column 10\x1b[5;10HThis text is at (5, 10)');
+  console.log('\x1b[?25lCursor is hidden\x1b[?25hCursor is visible');
+
+// above code will works in browser console, terminal etc
